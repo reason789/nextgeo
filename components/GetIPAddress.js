@@ -1,5 +1,3 @@
-// components/IpAddress.js
-
 import { useEffect, useState } from "react";
 
 const GetIpAddress = () => {

@@ -22,16 +22,16 @@ const UserInfo = () => {
     }
 
     // Determine OS
-    if (/Windows/i.test(userAgent)) {
+    if (/iPhone|iPad|iPod/i.test(userAgent)) {
+      setOs("iOS");
+    } else if (/Android/i.test(userAgent)) {
+      setOs("Android");
+    } else if (/Windows/i.test(userAgent)) {
       setOs("Windows");
     } else if (/Macintosh/i.test(userAgent)) {
       setOs("Mac OS");
     } else if (/Linux/i.test(userAgent)) {
       setOs("Linux");
-    } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
-      setOs("iOS");
-    } else if (/Android/i.test(userAgent)) {
-      setOs("Android");
     } else {
       setOs("Unknown");
     }
